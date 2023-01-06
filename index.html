@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="./resources/css/style.css">
+
+    <title>Encriptador de texto</title>
+</head>
+
+<body id="body" >
+    <header>
+        <h1>
+            <img src="./resources/images/log.svg" alt="logo de alura">
+        </h1>
+    </header>
+
+    <main>
+        <section class="input-section">
+            <div class="input-div">
+                <textarea id="input" class="input" placeholder="Ingrese el texto aquí"></textarea>
+
+                <div>
+                    <button class="icon btn-sm d-none" id="btn-close"><img src="./resources/images/x-circle-fill.svg" alt="limpiar input"></button>
+                </div>
+            </div>
+
+            <div class="actions">
+
+                <div id="buttons" class="buttons">
+                    <button id="btn-encrypt" class="btn btn-dark">Encriptar</button>
+                    <button id="btn-decrypt" class="btn btn-light">Desencriptar</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="view-section" class="view-section">
+            <textarea id="output" class="output d-none" readonly></textarea>
+            <div id="no-output-div">
+                <div class="image-div">
+                    <img src="./resources/images/Muñeco.svg" alt="Ningún mensaje fue encontrado">
+                </div>
+                <h2>Ningún mensaje fue encontrado</h2><br>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            
+            <button id="btn-copy" class="btn btn-light d-none">Copiar</button>
+
+        </section>
+    </main>
+    
+    <footer>
+        <div class="icon">
+            <a href="" target="_blank">
+                <img src="./resources/images/github.svg" alt="github link"></a>
+        </div>
+        <div class="icon">
+            <a href="https://www.linkedin.com/in/erick-ramirez-trujillo-backend/" target="_blank">
+                <img src="./resources/images/linkedin.svg" alt="linkedin link"></a>
+        </div>
+    </footer>
+</body>
+<script src="./resources/js/script.js"></script>
+</html>
